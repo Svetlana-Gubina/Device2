@@ -3,20 +3,26 @@
    <head>
       <meta charset="utf-8">
       <title>Device</title>
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
    </head>
    <body>
       <header class="main-header">
         <h1 class="visually-hidden">Магазин модных гаджетов "Девайс"</h1>
          <a class="logo">Device</a>
          <div class="top-menu">
-            <input class="site-search" type="search" name="search" placeholder="Поиск по сайту">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input id="search-input" class="site-search" type="search" name="search" placeholder="Поиск по сайту">
+            <label for="search-input" class="visually-hidden">Поиск по сайту</label>
+            <button type="submit" class="btn-hidden visually-hidden">Найти</button>
+          </form>
             <a href="#" class="login-link">Войти</a>
             <a href="#" class="compare-link">Сравнить</a>
             <a href="#" class="cart-link">Корзина</a>
          </div>
          <nav class="main-navigation">
             <ul class="main-nav-list">
-               <li><a href="#">Каталог товаров</a></li>
+               <li><a class="cat-link" href="#">Каталог товаров</a></li>
                <li><a href="#">Доставка</a></li>
                <li><a href="#">Гарантия</a></li>
                <li><a href="#">Контакты</a></li>
@@ -27,7 +33,7 @@
          <section class="slider-promo">
             <h2 class="visually-hidden">Рекомендуем купить</h2>
             <div class="slide-1">
-               <img class="promo-foto" src="#" width="384" height="486" alt="Палка для селфи">
+               <img class="promo-foto" src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
                <h3 class="promo-heading">Делай селфи, как Бен Стиллер!</h3>
                <span class="slider-number">01</span>
                <p class="promo-text">
@@ -49,7 +55,7 @@
                </table>
             </div>
             <div class="slide-2">
-               <img class="promo-foto" src="#" width="345" height="485" alt="Фитнес-браслет">
+               <img class="promo-foto" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
                <h3 class="promo-heading">Худеем правильно!</h3>
                <span class="slider-number">02</span>
                <p class="promo-text">
@@ -66,7 +72,7 @@
                </table>
             </div>
             <div class="slide-3">
-               <img class="promo-foto" src="#" width="526" height="334" alt="Фитнес-браслет">
+               <img class="promo-foto" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
                <h3 class="promo-heading">Порхает как бабочка, жалит как пчела!</h3>
                <span class="slider-number">03</span>
                <p class="promo-text">
@@ -130,10 +136,10 @@
          <section class="brands">
             <h2 class="visually-hidden">Производители</h2>
             <ul class="brands-list">
-               <li class="brand-item"><a href="#"><img src="#" width="160" height="160" alt="DJI"></a></li>
-               <li class="brand-item"><a href="#"><img src="#" width="160" height="160" alt="SPGadgets"></a></li>
-               <li class="brand-item"><a href="#"><img src="#" width="160" height="160" alt="GoPro"></a></li>
-               <li class="brand-item"><a href="#"><img src="#" width="160" height="160" alt="Vive"></a></li>
+               <li class="brand-item"><a href="#"><img src="img/dji-logo-light.png" width="160" height="160" alt="DJI"></a></li>
+               <li class="brand-item"><a href="#"><img src="img/sp-gadgets-logo-light.png" width="160" height="160" alt="SPGadgets"></a></li>
+               <li class="brand-item"><a href="#"><img src="img/go-pro-logo-light.png" width="160" height="160" alt="GoPro"></a></li>
+               <li class="brand-item"><a href="#"><img src="img/vive-logo-light.png" width="160" height="160" alt="Vive"></a></li>
             </ul>
          </section>
          <section class="about-us">
@@ -154,7 +160,7 @@
          <section class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <img src="#" width="560" height="222" alt="Как нас найти: город Москва, улица Строителей, 15">
+            <img src="img/map-mini.png" width="560" height="222" alt="Карта проезда к магазину: город Москва, улица Строителей, 15">
             <a class="contact-us-link" href="#">Напишите нам</a>
          </section>
       </main>
@@ -208,7 +214,7 @@
       </section>
       <section class="modal modal-map">
          <h2 class="visually-hidden">Карта проезда</h2>
-         <img src="#" width="960" height="559" alt="Карта проезда к магазину по адресу:Москва, ул. Строителей, 15">
+         <img src="img/map-big.png" width="960" height="559" alt="Карта проезда к магазину по адресу:Москва, ул. Строителей, 15">
          <button class="modal-close" type="button">Закрыть</button>
       </section>
    </body>
