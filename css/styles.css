@@ -504,6 +504,10 @@ input[type="search"]:-moz-placeholder {
 
     list-style: none;
 }
+.brand-item {
+    width: 20%;
+    min-height: 100px;
+}
 .dji img,
 .sp img,
 .go-pro img,
@@ -538,13 +542,29 @@ input[type="search"]:-moz-placeholder {
     flex-wrap: wrap;
 }
 .about-us {
+    position: relative;
     width: 465px;
 }
+.about-us::before,
+.contacts::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 40px;
+    width: 7px;
+    height: 88px;
+    transform: rotate(-90deg);
+    background-color: #000000;
+}
 .contacts {
+    position: relative;
     width: 560px;
 }
+
 .about-us h2,
 .contacts h2 {
+    
+    margin-bottom: 56px;
     color: #000000;
     font-family: "Gilroy - Extra Bold", sans-serif;
     font-size: 47px;
@@ -559,13 +579,20 @@ input[type="search"]:-moz-placeholder {
     font-weight: 300;
     line-height: 30px;
 }
+
+.about-us-paragraph:nth-child(3) {
+    margin-bottom: 40px;
+}
 .transport-company-list {
     margin: 0;
+    margin-bottom: 70px;
     padding: 0;
 
-    list-style: none;
+    list-style-type: ;
 }
 .transport-company {
+    padding-left: 30px;
+    margin-bottom: 7px;
     color: #000000;
     font-family: "Gilroy - Extra Bold", sans-serif;
     font-size: 16px;
@@ -574,8 +601,6 @@ input[type="search"]:-moz-placeholder {
 }
 .about-us-link,
 .contact-us-link {
-    position: relative;
-
     color: #000000;
     font-family: "Gilroy - Extra Bold",sans-serif;
     font-size: 18px;
@@ -584,18 +609,26 @@ input[type="search"]:-moz-placeholder {
     text-transform: uppercase;
     letter-spacing: 2.15px;
 }
-/*.about-us-link:after,
-.contact-us-link::after {
+
+/*.link-link::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -120px;
+    left: 80px;
     width: 8px;
     height: 260px;
     transform: rotate(90deg);
-    background-color: #f0c52e;
+    background-color: rgba(240, 197, 46, 0.8);
 }*/
 
+.contacts-paragraph {
+    margin-bottom: 44px;
+}
+.contacts img {
+    width: 560px;
+    height: 222px;
+    margin-bottom: 70px;
+}
 /*----------------------------------MAIN-2----------------------------*/
 
 .main-heading {
@@ -981,7 +1014,24 @@ footer {
     min-height: 323px;
     background-color: #464646;
 }
+.footer-column:first-child {
+    position: relative;
+    width: 25%;
+}
+.footer-column:first-child:after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 40px;
+    width: 7px;
+    height: 88px;
+    transform: rotate(90deg);
+    background-color: #ffc600;
+}
+
 .footer-column .logo {
+    display: block;
+    margin-bottom: 40px;
     color: #ffc600;
 
     width: 164px;
@@ -1007,6 +1057,32 @@ footer {
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
+}
+
+.footer-column:nth-child(2) {
+    /*width: 30%;*/
+    display:flex;
+    flex-direction: column;
+    min-width: 430px;
+    padding-top: 76px;
+}
+.footer-column:nth-child(3) {
+    margin: 0;
+    padding: 0;
+    min-width: 325px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+.footer-menu {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer-login-link,
 .footer-compare-link,
@@ -1045,13 +1121,21 @@ footer {
     fill: rgba(255, 198, 0, 0.3);
 }
 footer .tel {
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
     width: 164px;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 30px;
 }
 footer .services-list {
+    width: 100%;
+    
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 
@@ -1080,6 +1164,17 @@ footer .services-list {
 .html-link:active path {
     fill: rgba(255, 198, 0, 0.3);
 }
+.social-buttons {
+    width: 150px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: auto;
+    padding: 0;
+
+    list-style: none;
+}
 .social-button {
     display: flex;
     justify-content: center;
@@ -1098,7 +1193,11 @@ footer .services-list {
 .social-button:active {
     background-color: rgba(255, 255, 255, 0.1);
 }
-
+footer .source {
+   margin: 0;
+   padding: 0;
+   margin-top: auto;
+}
 
 .visually-hidden:not(:focus):not(:active),
  input[type="checkbox"].visually-hidden,
