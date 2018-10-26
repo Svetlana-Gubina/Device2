@@ -36,14 +36,28 @@
          <nav class="main-navigation">
             <ul class="main-nav-list">
                <li class="main-nav-item"><a class="cat-link" href="#">Каталог товаров</a>
-               <ul class="submenu visually-hidden">
+               <!--<ul class="submenu">
                  <li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
                  <li class="submenu-item"><a href="#">Моноподы для селфи</a></li>
                  <li class="submenu-item"><a href="#">Экшн-камеры</a></li>
                  <li class="submenu-item"><a href="#">Фитнес-браслеты</a></li>
                  <li class="submenu-item"><a href="#">Умные часы</a></li>
                  <li class="submenu-item"><a href="#">Квадрокоптеры</a></li>
-               </ul></li>
+               </ul></li>-->
+               <table class="submenu visually-hidden">
+                 <tr>
+                   <td><a href="#">Виртуальная реальность</a></td>
+                   <td><a href="#">Фитнес-браслеты</a></td>
+                   <td><a href="#">Квадрокоптеры</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Моноподы для селфи</a></td>
+                  <td><a href="#">Умные часы</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Экшн-камеры</a></td>
+                </tr>
+                </table></li>
                <li class="main-nav-item"><a href="#">Доставка</a></li>
                <li class="main-nav-item"><a href="#">Гарантия</a></li>
                <li class="main-nav-item"><a href="#">Контакты</a></li>
@@ -319,29 +333,34 @@
                </p>
          </div>
       </footer>
-      <section class="modal modal-login">
+      <section class="modal modal-write-us">
          <h2 class="visually-hidden">Напишите нам</h2>
          <form action="#" method="post">
-            <p>
-               <label for="user-name">Ваше имя:</label>
-               <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p>
-               <label for="user-email">Ваш e-mail:</label>
-               <input id="user-email" type="email" name="email" placeholder="email@example.com">
-            </p>
+           <div class="inputs">
+              <p>
+                  <label for="user-name">Ваше имя:</label>
+                  <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+               </p>
+               <p>
+                  <label for="user-email">Ваш e-mail:</label>
+                  <input id="user-email" type="email" name="email" placeholder="email@example.com">
+               </p>
+           </div>
+            
             <p>
                <label for="user-message">Текст письма:</label>
                <textarea id="user-message" rows="5" placeholder="В свободной форме"></textarea>
             </p>
-            <button type="submit">Отправить</button>
+            <button class="submit" type="submit">Отправить</button>
          </form>
          <button class="modal-close" type="button">Закрыть</button>
       </section>
+      
       <section class="modal modal-map">
          <h2 class="visually-hidden">Карта проезда</h2>
-         <img src="img/map-big.png" width="960" height="559" alt="Карта проезда к магазину по адресу:Москва, ул. Строителей, 15">
+         <img src="img/map-big.png" width="960" height="560" alt="Карта проезда к магазину по адресу:Москва, ул. Строителей, 15">
          <button class="modal-close" type="button">Закрыть</button>
       </section>
+
    </body>
 </html>
