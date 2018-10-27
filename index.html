@@ -68,7 +68,7 @@
       <main>
          <section class="slider-promo">
             <h2 class="visually-hidden">Рекомендуем купить</h2>
-            <div class="promo-slide-1">
+            <div class="promo-slide-1 visually-hidden">
               <div class="image">
                   <img class="promo-foto" src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
               </div>
@@ -76,10 +76,11 @@
                   <h3 class="promo-heading">Делай селфи, <br>как Бен Стиллер!</h3>
                   <span class="slider-number">01</span>
                   <p class="promo-text">
-                     Самая длинная палка для селфи доступна в нашем магазине.
-                     Восемь (Восемь,Карл!) метров длинной и весом всего пять килограмм
+                     Самая длинная палка для селфи доступна в нашем магазине.<br>
+                     Восемь (Восемь,Карл!) метров длинной и весом всего 5 килограмм
                   </p>
                   <a class="details" href="#">Подробнее</a>
+                  
                   <table class="options">
                      <tr class="row-2">
                         <td>8,5 м</td>
@@ -115,7 +116,7 @@
                </table>
               </div>
             </div>
-            <div class="promo-slide-3 visually-hidden">
+            <div class="promo-slide-3">
                 <div class="image">
                <img class="promo-foto" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
                </div>
@@ -138,6 +139,16 @@
                </table>
               </div>
             </div>
+
+                  <input id="btn-1" type="radio" name="toggle">
+                  <input id="btn-2" type="radio" name="toggle">
+                  <input id="btn-3" type="radio" name="toggle">
+                  
+                  <div class="slider-controls">
+                      <label for="btn-1"></label>
+                      <label for="btn-2"></label>
+                      <label for="btn-3"></label>
+                  </div>
          </section>
 
          <section class="porduct-groups">
@@ -210,6 +221,7 @@
                <li class="services-item"><a href="#">Гарантия</a></li>
                <li class="services-item"><a href="#">Кредит</a></li>
             </ul>
+            
             <ul class="services-slider">
                <li class="services-slide-1">
                   <h3 class="sevice-heading">Доставка</h3>
@@ -335,7 +347,7 @@
       </footer>
       <section class="modal modal-write-us">
          <h2 class="visually-hidden">Напишите нам</h2>
-         <form action="#" method="post">
+         <form class="modal-form" action="#" method="post">
            <div class="inputs">
               <p>
                   <label for="user-name">Ваше имя:</label>
@@ -347,9 +359,9 @@
                </p>
            </div>
             
-            <p>
+            <p class="text-area">
                <label for="user-message">Текст письма:</label>
-               <textarea id="user-message" rows="5" placeholder="В свободной форме"></textarea>
+               <textarea id="user-message" rows="6" placeholder="В свободной форме"></textarea>
             </p>
             <button class="submit" type="submit">Отправить</button>
          </form>
