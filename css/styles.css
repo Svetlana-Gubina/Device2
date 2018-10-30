@@ -476,7 +476,7 @@ input[type="search"]:-moz-placeholder {
 }
 .row-2 {
     color: #000000;
-    font-family:"Gilroy Light", sans-serif;/*??????*/
+    font-family:"Gilroy Light", sans-serif;
     font-size: 36px;
     font-weight: 300;
     line-height: 48px;
@@ -767,7 +767,7 @@ input[type="search"]:-moz-placeholder {
 .contact-us-link {
     width: 240px;
     display: block;
-    padding: 8px 14px;
+    : 8px 14px;
     color: #000000;
     font-family: "Gilroy - Extra Bold",sans-serif;
     font-size: 18px;
@@ -805,8 +805,8 @@ input[type="search"]:-moz-placeholder {
 
 .main-heading {
     margin-left: 200px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     color: #000000;
     font-family: "Gilroy - Extra Bold", sans-serif;
     font-size: 47px;
@@ -840,8 +840,8 @@ input[type="search"]:-moz-placeholder {
     content: "";
     
     position: absolute;
-    top: 40%;
-    right: 15px;
+    top: 45%;
+    right: 20px;
     transform: rotate(45deg);
   
     width: 3px;
@@ -871,30 +871,29 @@ input[type="search"]:-moz-placeholder {
     justify-content: space-between;
 }
 .filter {
-    width: 30%;
+    width: 33%;
 
     background-color: rgba(0, 0, 0,  0.1);
 }
 .filter h2 {
     margin: 0;
     margin-bottom: 70px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #000000;
     font-family: "Gilroy - Extra Bold", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
-    letter-spacing: 0.91px;
+    letter-spacing: 3px;
     text-align: center;
 
     background-color:rgba(0, 0, 0, 0.3);
 }
 .filter form {
     width: 40%;
-    margin-left: 200px;
-    margin-right: 70px;
+    margin-left: 180px;
 }
 .filter .fieldset {
     position: relative;
@@ -910,8 +909,10 @@ input[type="search"]:-moz-placeholder {
 }
 legend {
     display: block;
-    padding-top: 20px;
-    margin-bottom: 30px;
+    padding-top: 10px;
+    margin: 0;
+    margin-left: -10px;
+    margin-bottom: 25px;
     color: #000000;
     font-family: "Gilroy - Extra Bold", sans-serif;
     font-size: 18px;
@@ -927,12 +928,15 @@ legend {
 
     list-style: none;
 }
+.bluetooth-options {
+    margin-bottom: 40px;
+}
 .bluetooth-options label,
 .color-options label {
     position: relative;
     display: block;
-    padding-left: 40px;
-    margin-bottom: 40px;
+    padding-left: 30px;
+    margin-bottom: 25px;
 }
 .color-options input[type="checkbox"]+label::before {
     content: "";
@@ -974,11 +978,10 @@ legend {
 .filter-range {
 	position: relative;
 	margin: 0;
-	/*margin-bottom: 10px;*/
+	margin-bottom: 5px;
 	padding: 0;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	min-height: 80px;
 }
 .scale {
     position: relative;
@@ -994,7 +997,7 @@ legend {
 .range-toggle {
     position: absolute;
     top: -10px;
-	left: 0;
+	left: -10px;
     width: 4px;
 	height: 4px;
 	background: #ababab;
@@ -1004,11 +1007,12 @@ legend {
     cursor: pointer;
 }
 .range-toggle-max {
-	left: 100px;
+	left: 110px;
 }
 .submit-options {
+    min-width: 200px;
     display: block;
-    padding: 14px 20px;
+    padding: 8px 20px;
     color: #000000;
     font-family: "Gilroy - Extra Bold", sans-serif;
     font-size: 18px;
@@ -1021,7 +1025,7 @@ legend {
     background-image: url("../img/line.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 200px;
+    background-size: 200px 8px;
 }
 .submit-options:hover,
 .submit-options:focus {
@@ -1034,12 +1038,13 @@ legend {
 }
 
 .price-controls {
+    opacity: 0.2;
+    color: #000000;
     width: 100%;
     margin: 0;
+    margin-bottom: 30px;
     padding: 0;
     font-size: 0;
-
-    border:1px solid violet;
 }
 .price-label,
 .price-input {
@@ -1047,7 +1052,7 @@ legend {
     display: inline-block;
 }
 .price-label {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .price-input {
     width: 25%;
@@ -1057,10 +1062,8 @@ legend {
     background-color: transparent;
 }
 .price-input:first-child {
-    margin-right: 10px;
+    margin-right: 40px;
 }
-
-
 
 .cat-container {
     width: 70%;
@@ -1070,27 +1073,24 @@ legend {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 20px 140px 20px 60px;
+    
     box-sizing: border-box;
-    padding-right: 140px;
     background-color: rgba(0, 0, 0,  0.1);
 }
 .sort h2 {
     margin: 0;
     margin-right: 55px;
-    margin-left: 70px;
     color: #000000;
     font-family: "Gilroy - Extra Bold", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
-    letter-spacing: 0.91px;
+    letter-spacing: 3px;
 }
 .sort a {
     margin-right: 30px;
-    padding-top: 2px;
     color: rgba(0, 0, 0, 0.3);
     font-size: 14px;
     font-weight: 400;
@@ -1144,6 +1144,28 @@ legend {
     position: relative;
     margin-bottom: 40px;
 }
+.flag {
+    position: absolute;
+}
+.flag-new {
+    top: 30px;
+    right:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 61px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0.1;
+    font-family: "Gilroy - Extra Bold", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+}
 .catalog-item img {
     width: 360px;
     height: 380px;
@@ -1191,7 +1213,7 @@ legend {
 }
 .actions .buy {
     display: block;
-    padding: 14px 40px;
+    padding: 8px 20px;
     margin-bottom: 15px;
     color: #000000;
     font-family: "Gilroy - Extra Bold", sans-serif;
@@ -1204,7 +1226,7 @@ legend {
     background-image: url("../img/line.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 200px;
+    background-size: 200px 8px;
 }
 
 .actions .buy:hover,
@@ -1240,17 +1262,13 @@ legend {
     width: 100%;
     box-sizing: border-box;
     margin: 0;
-    margin-bottom: 77px;
 
     list-style: none;
     background-color: rgba(0, 0, 0,  0.1);
 }
 .pagination-list a {
     display: block;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 15px;
-    padding-left: 15px;
+    padding: 20px;
     color: rgba(0, 0, 0,  0.3);
     font-family: "Gilroy - Extra Bold", sans-serif;
     font-size: 16px;
@@ -1267,9 +1285,6 @@ legend {
 }
 .pagination-list a:active {
    color: #000000;
-}
-.pagination-item {
-    margin-right: 30px;
 }
 .pagination-item:first-child {
     margin-left: -40px;
@@ -1289,7 +1304,7 @@ legend {
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
-    letter-spacing: 0.91px;
+    letter-spacing: 3px;
 }
 .pagination-item .backward:hover,
 .pagination-item .forward:hover,
