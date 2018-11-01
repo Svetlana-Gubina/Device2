@@ -38,14 +38,6 @@
          <nav class="main-navigation">
             <ul class="main-nav-list">
                <li class="main-nav-item"><a class="cat-link" href="#">Каталог товаров</a>
-               <!--<ul class="submenu">
-                 <li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
-                 <li class="submenu-item"><a href="#">Моноподы для селфи</a></li>
-                 <li class="submenu-item"><a href="#">Экшн-камеры</a></li>
-                 <li class="submenu-item"><a href="#">Фитнес-браслеты</a></li>
-                 <li class="submenu-item"><a href="#">Умные часы</a></li>
-                 <li class="submenu-item"><a href="#">Квадрокоптеры</a></li>
-               </ul></li>-->
                <table class="submenu visually-hidden">
                  <tr>
                    <td><a href="#">Виртуальная реальность</a></td>
@@ -222,9 +214,9 @@
          <section class="services">
             <h2 class="visually-hidden">Услуги</h2>
             <ul class="services-list">
-               <li class="services-item current-item"><a href="#">Доставка</a></li>
-               <li class="services-item"><a href="#">Гарантия</a></li>
-               <li class="services-item"><a href="#">Кредит</a></li>
+               <li class="services-item current-item itme-1"><a class="delivery-link" href="#">Доставка</a></li>
+               <li class="services-item itme-2"><a class="varranty-link" href="#">Гарантия</a></li>
+               <li class="services-item itme-3"><a class="credit-link" href="#">Кредит</a></li>
             </ul>
             
             <ul class="services-slider">
@@ -369,7 +361,7 @@
             </p>
             <button class="submit" type="submit">Отправить</button>
          </form>
-         <button class="modal-close" type="button">Закрыть</button>
+         <button class="modal-close write-us-close" type="button">Закрыть</button>
       </section>
       
       <section class="modal modal-map">
@@ -378,29 +370,59 @@
          <img src="img/map-big.png" width="960" height="560" alt="Карта проезда к магазину по адресу:Москва, ул. Строителей, 15">
          <button class="modal-close map-close" type="button">Закрыть</button>
       </section>
+      <script src="js/script.js"></script>
       <script>
-      var modal = document.querySelector(".modal-write-us"); 
-      var contactUs = document.querySelector(".contact-us-link");
-      var focus = modal.querySelector("[name=name]");
-      var close = modal.querySelector("");
-      var map = document.querySelector(".modal-map");
-      var mapMini = document.querySelector(".link-map"); 
-      var mapClose = map.querySelector(".map-close");
-      
-      mapMini.addEventListener("click", function (evt) {
-	      evt.preventDefault();
-	      map.classList.add("modal-show");
-      });
-      mapClose.addEventListener("click", function(evt){
-        evt.preventDefault();
-        map.classList.remove("modal-show");
-      });
-      contactUs.addEventListener("click", function(evt){
-        evt.preventDefault();
-        modal.classList.add("modal-show");
-        focus.focus();
-      });
-
+        /*Slider-2*/
+        var deliveryLink = document.querySelector(".delivery-link");
+        var varrantyLink = document.querySelector(".varranty-link");
+        var creditLink = document.querySelector(".credit-link");
+        var deliverySlide = document.querySelector(".services-slide-1");
+        var varrantySlide = document.querySelector(".services-slide-2");
+        var creditSlide = document.querySelector(".services-slide-3");
+        var item1 = document.querySelector(".item-1");
+        var item2 = document.querySelector(".item-2");
+        var item3 = document.querySelector(".item-3");
+        
+        deliveryLink.addEventListener("click", function(evt){
+          evt.preventDefault();
+          deliverySlide.classList.remove("visually-hidden");
+          varrantySlide.classList.add("visually-hidden");
+          creditSlide.classList.add("visually-hidden");
+          item1.classList.add("curent-item");
+          if(item2.classList.contains("curent-item")){
+            item2.classList.remove("curent-item");
+          }
+          else{
+            item3.classList.remove("curent-item");
+          }
+          
+        });
+        varrantyLink.addEventListener("click", function(evt){
+          evt.preventDefault();
+          varrantySlide.classList.remove("visually-hidden");
+          deliverySlide.classList.add("visually-hidden");
+          creditSlide.classList.add("visually-hidden");
+          item2.classList.add("curent-item");
+          if(item3.classList.contains("curent-item")){
+            item3.classList.remove("curent-item");
+          }
+          else{
+            item1.classList.remove("curent-item");
+          }
+        });
+        creditLink.addEventListener("click", function(evt){
+          evt.preventDefault();
+          creditSlide.classList.remove("visually-hidden");
+          varrantySlide.classList.add("visually-hidden");
+          deliverySlide.classList.add("visually-hidden");
+          item3.classList.add("curent-item");
+          if(item2.classList.contains("curent-item")){
+            item2.classList.remove("curent-item");
+          }
+          else{
+            item1.classList.remove("curent-item");
+          }
+        });
       </script>
 
    </body>

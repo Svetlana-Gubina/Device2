@@ -693,6 +693,11 @@ input[type="search"]:-moz-placeholder {
 	background-color: #000000;
 	background-image: none;
 }
+/*.active {
+    color: #f7e184;
+	background-color: #000000;
+	background-image: none;
+}*/
 
 .services-slider {
 	width: 60%;
@@ -1849,7 +1854,8 @@ footer .source {
 	border: 0;
 	background-color: #f0c52e;
 	opacity: 0.5;
-	cursor: pointer;
+    cursor: pointer;
+    z-index: 50;
 }
 
 .modal-close:hover,
@@ -1866,7 +1872,7 @@ footer .source {
 	/*content: url("../img/modal-close.png");*/
 	content: "";
 	top: 50%;
-	left: 25%;
+	left: 22%;
 	position: absolute;
 	width: 30px;
 	height: 4px;
@@ -1995,7 +2001,7 @@ footer .source {
 	border: none;
 	-webkit-box-shadow: 0;
 	        box-shadow: 0;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .modal-form input[type="text"]:hover,
@@ -2008,7 +2014,7 @@ footer .source {
 .modal-form input[type="email"]:focus,
 .text-area textarea:focus {
 	color: #464646;
-	border: 3px solid #f0c52e;
+	outline: 3px solid #f0c52e;
 	background-color: transparent;
 }
 
