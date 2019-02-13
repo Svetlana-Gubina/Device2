@@ -8,7 +8,6 @@
    </head>
    <body>
       <header class="main-header">
-        <h1 class="visually-hidden">Магазин модных гаджетов "Девайс"</h1>
          <a class="logo">Device</a>
          
          <div class="top-menu">
@@ -45,7 +44,7 @@
                    <td><a href="#">Квадрокоптеры</a></td>
                 </tr>
                 <tr>
-                  <td><a href="#">Моноподы для селфи</a></td>
+                  <td><a href="inner.html">Моноподы для селфи</a></td>
                   <td><a href="#">Умные часы</a></td>
                   <td></td>
                 </tr>
@@ -63,6 +62,7 @@
       </header>
 
       <main>
+         <h1 class="visually-hidden">Магазин модных гаджетов "Девайс"</h1>
          <section class="slider-promo">
             <h2 class="visually-hidden">Рекомендуем купить</h2>
             <div class="promo-slide-1">
@@ -137,15 +137,15 @@
               </div>
             </div>
 
-                  <input id="btn-1" type="radio" name="toggle">
-                  <input id="btn-2" type="radio" name="toggle">
-                  <input id="btn-3" type="radio" name="toggle">
-                  
-                  <div class="slider-controls">
-                      <label for="btn-1"></label>
-                      <label for="btn-2"></label>
-                      <label for="btn-3"></label>
-                  </div>
+            <input id="btn-1" type="radio" name="toggle" checked>
+            <input id="btn-2" type="radio" name="toggle">
+            <input id="btn-3" type="radio" name="toggle">
+            
+            <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+            </div>
          </section>
 
          <section class="porduct-groups">
@@ -236,7 +236,7 @@
                </li>
                <li class="services-slide-3 visually-hidden">
                   <h3 class="sevice-heading">Кредит</h3>
-                  <p class="service-paragraph">Залезть в долговую ям устало проще! Кредитные <br>
+                  <p class="service-paragraph">Залезть в долговую яму стало проще! Кредитные <br>
                      консультанты подберут для вас наиболее выгодные<br>
                      условия кредита. Выгодные для нашего банка, разумеется.
                   </p>
@@ -340,7 +340,8 @@
                     </a>
                  </p>
              </div>
-       </footer>
+      </footer>
+      <div class="modal modal-overlay"></div>
       <section class="modal modal-write-us">
          <h2 class="visually-hidden">Напишите нам</h2>
          <form class="modal-form" action="#" method="post">
@@ -371,59 +372,7 @@
          <button class="modal-close map-close" type="button">Закрыть</button>
       </section>
       <script src="js/script.js"></script>
-      <script>
-        /*Slider-2*/
-        var deliveryLink = document.querySelector(".delivery-link");
-        var varrantyLink = document.querySelector(".varranty-link");
-        var creditLink = document.querySelector(".credit-link");
-        var deliverySlide = document.querySelector(".services-slide-1");
-        var varrantySlide = document.querySelector(".services-slide-2");
-        var creditSlide = document.querySelector(".services-slide-3");
-        var item1 = document.querySelector(".item-1");
-        var item2 = document.querySelector(".item-2");
-        var item3 = document.querySelector(".item-3");
-        
-        deliveryLink.addEventListener("click", function(evt){
-          evt.preventDefault();
-          deliverySlide.classList.remove("visually-hidden");
-          varrantySlide.classList.add("visually-hidden");
-          creditSlide.classList.add("visually-hidden");
-          item1.classList.add("curent-item");
-          if(item2.classList.contains("curent-item")){
-            item2.classList.remove("curent-item");
-          }
-          else{
-            item3.classList.remove("curent-item");
-          }
-          
-        });
-        varrantyLink.addEventListener("click", function(evt){
-          evt.preventDefault();
-          varrantySlide.classList.remove("visually-hidden");
-          deliverySlide.classList.add("visually-hidden");
-          creditSlide.classList.add("visually-hidden");
-          item2.classList.add("curent-item");
-          if(item3.classList.contains("curent-item")){
-            item3.classList.remove("curent-item");
-          }
-          else{
-            item1.classList.remove("curent-item");
-          }
-        });
-        creditLink.addEventListener("click", function(evt){
-          evt.preventDefault();
-          creditSlide.classList.remove("visually-hidden");
-          varrantySlide.classList.add("visually-hidden");
-          deliverySlide.classList.add("visually-hidden");
-          item3.classList.add("curent-item");
-          if(item2.classList.contains("curent-item")){
-            item2.classList.remove("curent-item");
-          }
-          else{
-            item1.classList.remove("curent-item");
-          }
-        });
-      </script>
-
+      <script src="js/cat.js"></script>
+      <script src="js/sliders.js"></script>
    </body>
 </html>

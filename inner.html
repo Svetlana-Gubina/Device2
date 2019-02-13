@@ -8,10 +8,13 @@
    </head>
    <body class="inner-page">
       <header class="main-header">
-         <h1 class="visually-hidden">Страница каталога "Девайс"</h1>
          <a class="logo">Device</a>
          <div class="top-menu">
-            <input class="site-search" type="search" name="search" placeholder="Поиск по сайту">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+               <input id="search-input" class="site-search" type="search" name="search" placeholder="Поиск по сайту">
+               <label for="search-input" class="visually-hidden">Поиск по сайту</label>
+               <button type="submit" class="btn-hidden visually-hidden">Найти</button>
+            </form>
             <a href="#" class="login-link">
                <svg class="header-small-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="16"
                   viewBox="0 0 22 16">
@@ -42,14 +45,6 @@
             <ul class="main-nav-list">
                <li class="main-nav-item">
                   <a class="cat-link" href="#">Каталог товаров</a>
-                  <!--<ul class="submenu visually-hidden">
-                     <li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
-                     <li class="submenu-item"><a href="#">Моноподы для селфи</a></li>
-                     <li class="submenu-item"><a href="#">Экшн-камеры</a></li>
-                     <li class="submenu-item"><a href="#">Фитнес-браслеты</a></li>
-                     <li class="submenu-item"><a href="#">Умные часы</a></li>
-                     <li class="submenu-item"><a href="#">Квадрокоптеры</a></li>
-                     </ul></li>-->
                   <table class="submenu visually-hidden">
                      <tr>
                         <td><a href="#">Виртуальная реальность</a></td>
@@ -299,5 +294,6 @@
             </p>
          </div>
       </footer>
+      <script src="js/cat.js"></script>
    </body>
 </html>
