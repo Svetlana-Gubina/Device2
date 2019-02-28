@@ -4,9 +4,9 @@
       <meta charset="utf-8">
       <title>Device</title>
       <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/styles.css" rel="stylesheet">
+      <link href="css/styles.min.css" rel="stylesheet">
    </head>
-   <body>
+   <body class="index">
       <header class="main-header">
          <a class="logo">Device</a>
          
@@ -61,7 +61,7 @@
          </nav>
       </header>
 
-      <main>
+      <main class="container">
          <h1 class="visually-hidden">Магазин модных гаджетов "Девайс"</h1>
          <section class="slider-promo">
             <h2 class="visually-hidden">Рекомендуем купить</h2>
@@ -76,6 +76,7 @@
                      Самая длинная палка для селфи доступна в нашем магазине.<br>
                      Восемь (Восемь,Карл!) метров длинной и весом всего 5 килограмм
                   </p>
+                  
                   <a class="details" href="#">Подробнее</a>
                   
                   <table class="options">
@@ -107,9 +108,9 @@
                   <tr class="row-2">
                      <td>48 часов</td>
                   </tr>
-                  <th class="row-1">
+                  <tr class="row-1">
                      <th>Без подзарядки</th>
-                  </th>
+                  </tr>
                </table>
               </div>
             </div>
@@ -124,14 +125,15 @@
                   Этот обычный, на превый взгляд, квадрокоптер,оснащен мощным лазером, замаскированным под стандартную камеру
                </p>
                <a class="details" href="#">Подробнее</a>
+               
                <table class="options">
+                  <tr class="row-1">
+                     <th>Дальность полета</th>
+                     <th>Радиус поражения</th>
+                  </tr>
                   <tr class="row-2">
                      <td>800 м</td>
                      <td>50 м</td>
-                  </tr>
-                  <tr class="row-1">
-                     <td>Дальность полета</td>
-                     <td>Радиус поражения</td>
                   </tr>
                </table>
               </div>
@@ -165,7 +167,7 @@
                     fill=" #464646"/>
                 </svg>
                 </div>
-                 <p>Моноподы для селфи</p>
+                 <p>Моноподы <br/>для селфи</p>
                </a></li>
                <li><a class="product-link" href="#">
                  <div class="product-image"><svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
@@ -371,8 +373,8 @@
          <img src="img/map-big.png" width="960" height="560" alt="Карта проезда к магазину по адресу:Москва, ул. Строителей, 15">
          <button class="modal-close map-close" type="button">Закрыть</button>
       </section>
-      <script src="js/script.js"></script>
-      <script src="js/cat.js"></script>
-      <script src="js/sliders.js"></script>
+      <script src="js/script.min.js"></script>
+      <script src="js/cat.min.js"></script>
+      <script src="js/sliders.min.js"></script>
    </body>
 </html>
