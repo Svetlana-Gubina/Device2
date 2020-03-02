@@ -8,7 +8,7 @@
    </head>
    <body class="inner-page">
       <header class="main-header">
-         <a class="logo">Device</a>
+         <a href="index.html" class="logo">Device</a>
          <div class="top-menu">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                <input id="search-input" class="site-search" type="search" name="search" placeholder="Поиск по сайту">
@@ -91,9 +91,9 @@
                      </div>
                      <div class="price-controls">
                         <label for="min" class="price-label">от</label>
-                        <input class="price-input min-price" id="min" type="text" name="min-price" value="0">
+                        <input class="price-input min-price" id="min" type="text" name="min-price" value="0" minlength="1" maxlength="4">
                         <label for="max" class="price-label">до</label>
-                        <input class="price-input max-price" id="max" type="text" name="max-price" value="5000">
+                        <input class="price-input max-price" id="max" type="text" name="max-price" value="5000" minlength="1" maxlength="4">
                      </div>
                   </fieldset>
                   <fieldset class="fieldset" style="border:0px;">
@@ -298,5 +298,6 @@
          </div>
       </footer>
       <script src="js/cat.min.js"></script>
+      <script src="js/filter-slider.min.js"></script>
    </body>
 </html>

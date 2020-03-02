@@ -93,6 +93,10 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.inner-page .logo {
+  color:  rgba(0, 0, 0);
+}
+
 .site-search {
 	position: relative;
 	width: 360px;
